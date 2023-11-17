@@ -38,5 +38,7 @@ Question: `What household items are available?`
 Response: `Home products are available, including pet water bottles made of high-quality plastic which is 100% food grade and BPA free. They come in a variety of attractive colours and are microwave safe (without lid), refrigerator safe, dishwasher safe and can also be used for re-heating food. They also have airtight lids and can be stacked in the kitchen for a look-good factor.`
 
 This is followed by two candidate answers along with their relevance score:
+
 `0.8974"Each product is microwave safe (without lid), refrigerator safe, dishwasher safe and can also be use ..."`
+
 `0.8942"These BB Home pet water bottles are made of high-quality plastic which is 100% food grade and BPA fr ..."`
