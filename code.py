@@ -16,6 +16,7 @@ import pandas as pd
 from cassandra.cluster import Cluster
 from cassandra.auth import PlainTextAuthProvider
 
+# Authentication and Establishing Connection
 cloud_config = {
     'secure_connect_bundle': ASTRA_DB_SECURE_BUNDLE_PATH
 }
@@ -23,6 +24,7 @@ auth_provider = PlainTextAuthProvider(ASTRA_DB_CLIENT_ID, ASTRA_DB_CLIENT_SECRET
 cluster = Cluster(cloud=cloud_config, auth_provider=auth_provider)
 astraSession = cluster.connect()
 
+# Step 1: Create Vector Embeddings
 llm = OpenAI(openai_api_key=OPENAI_API_KEY)
 myEmbedding = OpenAIEmbeddings(openai_api_key=OPENAI_API_KEY)
 
@@ -33,9 +35,11 @@ myCassandraVStore = Cassandra(
     table_name='qa_mini_demo',
 )
 
+# Step 2: Store the Embeddings
 df = pd.read_csv('bigBasketProducts.csv')
 df['description'] = df['description'].astype(str)
 
+# Number of entries (rows) to be inserted
 num_entries = 100
 values = df['description'].values[:num_entries]
 # print(values[:5])
@@ -46,6 +50,7 @@ print(f'Inserted {len(values)} lines')
 
 vectorIndex = VectorStoreIndexWrapper(vectorstore=myCassandraVStore)
 
+# Perform Queries
 first_qn = True
 while True:
     if first_qn:
