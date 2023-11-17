@@ -17,3 +17,13 @@ We need a reliable Vector Database to store the resulting vector embeddings gene
 ### Step 3 : Query the Database
 
 Once we have stored the embeddings, we can make simple queries on the stored data. In my code, I have showed how to do similarity searches. The result consists of two parts: The corresponding answer to the query and the best answer candidates sorted by a relevance score. The number of such candidates can also be tweaked in the code.
+
+
+## Execution Details
+
+Executing the code is quite straightforward since there is only one code file. However, there a few important things to do before trying to run the code:
+
+* The dataset should be in the same folder as the code file.
+* It is worth noticing that the first 6 lines of the code file have to be filled appropriately with the API Keys and corresponding Authentication tokens from OpenAI and Astra DB. These keys and tokens can be generated only after creating accounts on the respective websites.
+* Also, OpenAI free account only allows a limited number of requests and hence, must be utilized judiciously. This limit can be extended by making payments in case it is required by the user.
+* [Here](https://youtu.be/yfHHvmaMkcA?si=gr4Xylviuow2vCID), is a nice Youtube tutorial that I referred to while creating accounts on OpenAI, Astra DB and then subsequently generating the keys. Users can refer to the same in case they are stuck.
