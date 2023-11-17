@@ -29,7 +29,7 @@ Executing the code is quite straightforward since there is only one code file. H
 * [Here](https://youtu.be/yfHHvmaMkcA?si=gr4Xylviuow2vCID), is a nice Youtube tutorial that I referred to while creating accounts on OpenAI, Astra DB and then subsequently generating the keys. Users can refer to the same in case they are stuck.
 
 
-## Sample Query
+## Sample Queries
 
 Now, moving to the fun part. The following example shows a sample execution of the provided code:
 
