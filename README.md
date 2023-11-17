@@ -33,6 +33,12 @@ Executing the code is quite straightforward since there is only one code file. H
 
 Now, moving to the fun part. The following example shows a sample execution of the provided code:
 
+Question: `Do you have any oil products?`
+
+Response: 
+```\Yes, Aroma Treasures have specially formulated skin oil for dry skin that restores the natural moisture of the skin, improves its health and youthfulness, making it soft, shiny and smooth. It contains Garlic Oil that is known to help with digestion, cholesterol levels, cardiovascular support, and immunity."```
+
+
 Question: `What household items are available?`
 
 Response: `Home products are available, including pet water bottles made of high-quality plastic which is 100% food grade and BPA free. They come in a variety of attractive colours and are microwave safe (without lid), refrigerator safe, dishwasher safe and can also be used for re-heating food. They also have airtight lids and can be stacked in the kitchen for a look-good factor.`
