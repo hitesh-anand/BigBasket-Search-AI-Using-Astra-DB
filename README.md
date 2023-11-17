@@ -38,6 +38,7 @@ Question: `Do you have any oil products?`
 Response: 
 ```\Yes, Aroma Treasures have specially formulated skin oil for dry skin that restores the natural moisture of the skin, improves its health and youthfulness, making it soft, shiny and smooth. It contains Garlic Oil that is known to help with digestion, cholesterol levels, cardiovascular support, and immunity."```
 
+In another example, we show the possible candidate answers that are generated along with the main answer:
 
 Question: `What household items are available?`
 
